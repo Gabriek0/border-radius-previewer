@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Border-Radius Previewer</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <div id="mainContainer">
+      <h1>BORDER RADIUS PREVIEWER</h1>
+      <p id="Border"></p>
+      <div id="topInputs">
+        <input
+          type="text"
+          id="Border-top-left"
+          value="0"
+          oninput="handleInput()"
+        />
+        <input
+          type="text"
+          id="Border-top-right"
+          value="0"
+          oninput="handleInput()"
+        />
+      </div>
+      <div id="bottomInputs">
+        <input
+          type="text"
+          id="Border-bottom-left"
+          value="0"
+          oninput="handleInput()"
+        />
+        <input
+          type="text"
+          id="Border-bottom-right"
+          value="0"
+          oninput="handleInput()"
+        />
+      </div>
+      <div id="buttonAndBorderValues">
+        <input type="text" id="showingBorderValues" oninput="handleInput()" />
+        <button id="button" onclick="copyText()" id="buttonCopyText">
+          COPY TEXT
+        </button>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
